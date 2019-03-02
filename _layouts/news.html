@@ -49,7 +49,7 @@
             <p>{{ post.date | date_to_string }}</p>
             {% endif %}
             <p>{{ post.excerpt }}</p>
-            <a href="{{ post.url }}" class="btn btn-dark">Read more</a>
+            <a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-dark">Read more</a>
         </div>
     </div>
     {% endfor %}
